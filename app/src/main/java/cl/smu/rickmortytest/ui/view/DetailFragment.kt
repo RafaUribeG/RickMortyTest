@@ -23,11 +23,14 @@ class DetailFragment : Fragment() {
         return binding.root
     }
 
-    @Deprecated("Deprecated in Java")
-    override fun onActivityCreated(savedInstanceState: Bundle?) {
-        super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProvider(this)[DetailViewModel::class.java]
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        initViewModel()
+    }
+    private fun initViewModel() {
+        viewModel = ViewModelProvider(this)[DetailViewModel::class.java]
     }
 
 }

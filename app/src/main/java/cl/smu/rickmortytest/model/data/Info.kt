@@ -1,4 +1,4 @@
-package cl.smu.rickmortytest.model
+package cl.smu.rickmortytest.model.data
 
 data class Info(
     val count: Int,

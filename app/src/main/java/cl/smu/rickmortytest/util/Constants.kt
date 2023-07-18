@@ -1,6 +1,6 @@
 package cl.smu.rickmortytest.util
 
 object Constants {
-    const val BASE_URL = ""
-    const val END_POINT = ""
+    const val BASE_URL = "https://rickandmortyapi.com/api/"
+    const val END_POINT = "character"
 }
